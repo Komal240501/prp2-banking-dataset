@@ -1,0 +1,19 @@
+# Streamlit app configuration
+# Docs: https://docs.streamlit.io/develop/api-reference/configuration/config.toml
+
+[theme]
+primaryColor = "#1f77b4"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#262730"
+textColor = "#fafafa"
+font = "sans serif"
+
+[server]
+# Not strictly needed anymore (upload flow was removed), kept here in case
+# you reintroduce file uploads later — raises the per-file cap from the
+# 200MB Streamlit default. Note: Streamlit Community Cloud ignores this and
+# hard-caps at 200MB regardless of what's set here.
+maxUploadSize = 500
+
+[browser]
+gatherUsageStats = false
