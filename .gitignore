@@ -1,0 +1,11 @@
+# Never commit real credentials
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
